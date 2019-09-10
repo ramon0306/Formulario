@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html metacharset="UTF-8">
+<title> Formulário </title>
+<head>
+
+<link rel="stylesheet" href="form.css">
+
+  </head>
+<body>
+<form  action="index02.html">
+
+ <h2> Formulário   </h2>
+  <p class="nome">
+        <input type="text" id="nomeid" required="required" name="nome" onblur="pegaNome(this.value);"/>
+           <label for="nome"> Nome Completo </label>
+    </p>
+    <span id="nomeError"></span>
+
+    <p class="endereco">
+           <input type="text" id="enderecoid"  required="required" name="endereco" onblur="pegaEndereco(this.value);"/>
+           <label for="endereco"> endereco</label>
+
+  </p>
+  <span id="enderecoError"></span>
+
+  <p class="cidade">
+           <input type="text" id="cidadeid" required="required" name="cidade" onblur="pegaCidade(this.value);"/>
+           <label for="cidade"> Cidade </label>
+    </p>
+    <span id="cidadeError"></span>
+
+     <p class="uf">
+           <input type="text" id="Ufid"  required="required" name="uf" onblur="pegaUf(this.value);"/>
+           <label for="uf"> Uf </label>
+    </p>
+    <span id="ufError"></span>
+    <p class="telefoneResidencial">
+           <label for="Telefone Residencial"> Telefone Fixo </label>
+           <input type="text" id="TelefoneResidencialid" required="required" name="Telefone Residencial"/>
+    </p>
+   
+<p class="celular">
+           <input type="text" id="Celularid"  required="required" name="Celular" onblur="pegaCelular(this.value);"/>
+           <label for="Celular"> Celular </label>
+    </p>
+    <span id="celularError"></span>
+ <p class="email">
+      <input type="text" id="emailId"  required="required" name="email" onblur="pegaEmail(this.value);"/>
+      <label for="email">E-mail</label>
+    </p>
+    <span id="erro"></span>
+    
+<p class="profissao">
+           <input type="text" id="Profissaoid"  required="required" name="Profissao" onblur="pegaProfissao(this.value);"/>
+           <label for="Profissao"> Profissao </label>
+    </p>
+            <span id="profError"></span>
+
+    </p>
+
+<p class="motivoSolicitacao">
+           <label for="MotivoSolicitacao"> Motivo</label>
+           <select>
+            <option value="trabalho">Trabalho</option>
+            <option value="turismo">Turismo</option>
+            <option value="estudo">Estudo</option>
+            <option value="sairdopais">Sair do País</option>
+           </select>
+    </p>
+
+    <p class="Rg">
+           <label for="Rg"> Rg </label>
+           <input type="text" id="Rgid"  required="required" name="Rg"/>
+    </p>
+    <p class="Cnh">
+           <input type="text" id="Cnhid"  required="required" name="Cnh"/>
+           <label for="Cnh"> Cnh </label>
+    </p>
+
+    </p>
+    <p class="Cpf">
+           <input type="text" id="Cpfid"  required="required" name="Cpf"/>
+           <label for="Cpf"> Cpf </label>
+    </p>
+    <p class="títuloEleitor">
+           <input type="text" id="TítuloEleitorid"  required="required" name="TítuloEleitor"/>
+           <label for="TítuloEleitor"> Título de Eleitor </label>
+    </p>
+    <p class="PassAntigo">
+    <label for="PassAntigo">Passaporte Antigo?</label><br>
+   <input for= "PassAntigo" type="radio" name="webmaster" value="sim"/> Sim <br />
+  <input for= "PassAntigo" type="radio" name="webmaster" value="nao"/> Não <br />
+    
+    </p>
+   
+    <p class="NumPassaporte">
+    <input type="text" id="NumPassaporteid" required="required"/>
+    <label for="NumPassaporte"> Número do Passaporte </label>
+    </p>
+
+  <p class="submit">
+           <input type="submit" onclick="Enviar();" value="Enviar"/>
+     </p>
+
+    </form>
+
+
+    <script src="MaskJS.js"></script>
+    <script src="Form.js"></script>
+</body>
+</html
